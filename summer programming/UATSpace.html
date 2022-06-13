@@ -1,0 +1,90 @@
+<!--HTML file for CSC102
+Assignment: Launching your UAT Space Program HTML Document Tags
+Written by Nestor Hernandez
+email: nesrenteria11@gmail.com-->
+<!DOCTYPE html>
+    <!--html tag for assignment-->
+<html>
+<!--head tag for assignment-->
+    <head>
+        <!--the title goes at the title bar-->
+        <Title>
+            Nestor Hernandez's UATSpace Page
+        </Title>
+        <script>
+            //alert function as requiered by assingment
+            var alertText = "Test of the alert function";
+            //alert(alertText);
+        </script>
+        <script src="Code.js"></script>
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <!--<style>
+            body {
+                background-color: rgb(0, 247, 255);
+            }
+        </style>-->
+    </head>
+    <!--body tag as required by assignment-->
+    <body>
+        <!--logo for UATSpace-->
+        <img src="UATspaceLogo-1.jpg">
+        <!--fulfils header requirement-->
+        <h1>
+            UAT Space Program
+        </h1>
+        <!--paragraph tag for the assignment-->
+        <p>
+            This is a test of the paragraph tag. 
+            It is usually meant for more than one line of text. 
+            That is why they call it a paragraph tag.
+        </p>
+         <script>
+            //one line comment
+            //created a textValue comment
+            var textValue = "Test of the document.write() function";
+            //use that textValue comment
+            document.write(textValue)
+
+            /*multiline 
+            comment*/
+        </script>
+        <br>
+        <br>
+        Time left before launch:<br>
+        <div id="countdownDisplay">Launch not initiated</div>
+        <br>
+        <br>
+        <!--button requirements from assignment-->
+        <button onclick="countdownV1();">
+            Start
+        </button>
+
+        <button>
+            Stop
+        </button>
+        <br>
+        <br>
+        <h1 id="blink">Craps Game!!</h1>
+        <script type="text/javascript">
+            var blink = document.getElementById('blink');
+            setInterval(function(){
+                blink.style.opacity = (blink.style.opacity == 0 ? 1 : 0);
+            }, 1500);
+        </script>
+        <h2>please play</h2>
+        Die 1 result: <div id="dieRes1">Press Play Craps to roll dice</div><br>
+        Die 2 result: <div id="dieRes2">Press Play Craps to roll dice</div><br>
+        <div id="crapsRes">Craps results</div><br>
+        <br>
+        <button onclick="playCraps()">Play Craps</button>
+        <br>
+        <br>
+        Wins<br>
+        <div id="winRes">get some wins</div><br>
+        Loses<br>
+        <div id="losRes">get some loses</div><br>
+        Ties<br>
+        <div id="tieRes">get some ties</div><br>
+
+    </body>
+</html>
